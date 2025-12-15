@@ -15,8 +15,8 @@ namespace MoreValue.MoreValuePatch
 
         static void IncreaseObjectValuePatch(ref float ___dollarValueCurrent, ref float ___dollarValueOriginal)
         {
-            ___dollarValueCurrent *= 3f;
-            ___dollarValueOriginal *= 3f;
+            ___dollarValueCurrent *= 2f;
+            ___dollarValueOriginal *= 2f;
         }
 
     }

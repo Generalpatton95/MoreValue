@@ -20,4 +20,17 @@ namespace MoreValue.MoreValuePatch
         }
 
     }
+
+    [HarmonyPatch(typeof(RoundDirector))]
+    internal class  RoundDiretorPatch
+    {
+        [HarmonyPatch("StartRound")]
+        [HarmonyPrefix]
+        static void IncreaseHaulGoalPatch(ref int ___HaulGoalMax)
+        {
+            ___HaulGoalMax *= 10;
+        }
+    }
 }
+
+
